@@ -1,0 +1,302 @@
+[{
+  "_id": {
+    "$oid": "63865dd9cfb0b8829d9c8314"
+  },
+  "name": "Kongu Engineering College",
+  "location": "Perundurai,Erode",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "Civil",
+    "Mech",
+    "Mechatronics",
+    "Automobile",
+    "Chemical",
+    "Food technology",
+    "EEE",
+    "IT",
+    "AI&ML",
+    "AI&DS"
+  ],
+  "naacAccrediation": "A++",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Kongu Engineering College, one of the foremost multi professional research-led Institutions is internationally a recognized leader in professional and career-oriented education. It provides an integral, inter-disciplinary education - a unique intersection between theory and practice, passion and reason. The College offers courses of study that are on the frontiers of knowledge and it connects the spiritual and practical dimensions of intellectual life, in a stimulating environment that fosters rigorous scholarship and supportive community. This Institute is a great possession of the committed Trust called 'The Kongu Vellalar Institute of Technology Trust' in Erode District, Tamilnadu. The noble Trust has taken the institute to greater heights since its inception in 1983 and has established the college as a forum for imparting value based education for men and women.",
+  "contact": "Phone : 04294 - 226555, 226666, 226500",
+  "images": "/img/kongu.24d724c1.jpeg",
+  "placement": "100%",
+  "rank": 13000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://kongu.ac.in/"
+},{
+  "_id": {
+    "$oid": "63865de9cfb0b8829d9c8316"
+  },
+  "name": "Anna University",
+  "location": "Chennai",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "Aeronautical",
+    "EEE",
+    "IT",
+    "Civil",
+    "AI&DS",
+    "AI&ML"
+  ],
+  "naacAccrediation": "A++",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Anna University was established on 4th September, 1978 as a unitary type of University. This University was named after Late Dr.C.N.Annadurai, former Chief Minister of Tamil Nadu. It offers higher education in Engineering, Technology, Architecture and Applied Sciences relevant to the current and projected needs of the society. Besides promoting research and disseminating knowledge gained therefrom, it fosters cooperation between the academic and industrial communities.",
+  "contact": "Admissions: 044 - 2235 8314 Examinations: 044 - 2235 7295 / 96 (CoE),                044 - 2235 7853 (ACoE)Student Affairs: 044 - 2235 7080 / 81",
+  "images": "/img/anna.ecfe1900.jpeg",
+  "placement": "100%",
+  "rank": 600,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.annauniv.edu/"
+},{
+  "_id": {
+    "$oid": "63865df8cfb0b8829d9c8318"
+  },
+  "name": "SRM University",
+  "location": "Chennai",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "Aeronautical",
+    "EEE",
+    "IT",
+    "Civil",
+    "AI&DS",
+    "AI&ML"
+  ],
+  "naacAccrediation": "A++",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "SRM Institute of Science and Technology Chennai (SRMIST Chennai) was established in 1985 and was formerly known as SRM University Chennai. SRM IST Chennai is a private institute located in Kattankulathur, Tamil Nadu. SRM Institute of Science and Technology is recognised by the University Grants Commission (UGC). SMR Institute of Science and Technology has more than 50,000 students enrolled and the total faculty strength at SRMIST is 3272. SRM Institute of Science and Technology offers a wide range of UG, PG, and doctoral courses in engineering, humanities, medicine, etc. SRM Institute of Science and Technology is commonly known as SRM University.",
+  "contact": "+91-44- 27417000, +91-44-27417777",
+  "images": "/img/srm.2b7f12a4.jpeg",
+  "placement": "100%",
+  "rank": 13000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.srmist.edu.in/"
+},{
+  "_id": {
+    "$oid": "63865e06cfb0b8829d9c831a"
+  },
+  "name": "SSN University",
+  "location": "Kelambakkam",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil",
+    "AI&DS",
+    "AI&ML"
+  ],
+  "naacAccrediation": "A+",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Students are offered admissions at undergraduate and postgraduate levels at SSN College of Engineering (SSNCE). SSN College of Engineering admissions to the B.E courses are based on merit. SSN College of Engineering B.E courses are offered in 8 specialisations. SSN College of Engineering admission process is strictly based on the guidelines provided by Anna University. For SSN College of Engineering B.E admissions, out of total seats, 65% are filled through single window counselling. The remaining 35% is the management quota which is also offered on a merit basis. It must be noted that submission of a datasheet will not guarantee SSN College of Engineering admission.",
+  "contact": "044 – 2441 1656 / 2441 6474",
+  "images": "/img/ssn.6c5ae2a4.jpeg",
+  "placement": "100%",
+  "rank": 5000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.ssn.edu.in/"
+},{
+  "_id": {
+    "$oid": "63865e14cfb0b8829d9c831c"
+  },
+  "name": "PSG Tech",
+  "location": "Coimbatore",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil",
+    "AI&DS",
+    "AI&ML"
+  ],
+  "naacAccrediation": "A",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "PSG College of Engineering is an autonomous private engineering college, affiliated with Anna University. The college offers multiple UG and PG courses including BSc, MTech, PGP, MBA, PGDM, etc. Also, the college is popularly known for its most sought course, BTech. Admission to the BTech course is based on Class 12 merit followed by TNEA Counselling.",
+  "contact": "044 – 2441 1656 / 2441 6474",
+  "images": "/img/psg.1f6de80b.jpeg",
+  "placement": "100%",
+  "rank": 4800,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.psgtech.edu/"
+},{
+  "_id": {
+    "$oid": "63865e23cfb0b8829d9c831e"
+  },
+  "name": "Rajalakshmi Engineering College",
+  "location": "Chennai",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil"
+  ],
+  "naacAccrediation": "A+",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Rajalakshmi Engineering College (REC), Chennai offers admission to undergraduate and postgraduate programmes. Rajalakshmi Engineering College admissions are offered to B.E/B.Tech, M.B.A and M.E/M.Tech programmes. REC Chennai admission to B.E/B.Tech programme is done on the basis of candidates' performance in the class 10+2 examination. Candidates meeting the cutoff have to further participate in the TNEA counselling.",
+  "contact": "+91-44-67181111, 67181112",
+  "images": "/img/rajalaskhmi.259f9164.jpeg",
+  "placement": "100%",
+  "rank": 11000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.rajalakshmi.org/"
+},{
+  "_id": {
+    "$oid": "63865e38cfb0b8829d9c8320"
+  },
+  "name": "CIT",
+  "location": "Coimbatore",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil",
+    "Food technology"
+  ],
+  "naacAccrediation": "A+",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Coimbatore Institute‌ ‌of‌ ‌Technology (CIT), Coimbatore is ‌a‌ ‌government-aided ‌institute‌ ‌affiliated‌ ‌to‌ ‌Anna‌ ‌University‌ ‌and was‌ ‌established‌ ‌in 1956 by‌ ‌V.Rangaswamy‌ ‌Naidu‌ ‌Educational‌ ‌Trust‌ ‌with‌ ‌an‌ ‌aim‌ ‌of‌ ‌providing‌ ‌knowledge‌ to‌ ‌the‌ ‌students‌ ‌interested‌ ‌in‌ ‌engineering,‌ ‌technology‌ ‌and‌ ‌science‌ ‌field.‌ ‌Coimbatore Institute of Technology ‌has‌ ‌signed‌ ‌MoU‌ ‌with‌ ‌several‌ ‌national & international organisations‌ ‌such‌ ‌as‌ ‌Sector‌ ‌skills,‌ ‌Texas‌ ‌Tech‌ ‌University,‌ ‌Bharat‌ ‌Sanchar‌ ‌Nigam‌ ‌Ltd‌ & ‌Dr.‌ ‌Fixit‌ ‌Institute‌ ‌of‌ ‌Structural‌ ‌Protection.‌ ‌The‌ ‌institute‌ ‌offers‌ ‌undergraduate‌ ‌courses,‌ ‌integrated‌ ‌M.Sc‌ ‌Courses,‌ ‌Ph.D ‌programmes‌ ‌and‌ ‌postgraduate‌ ‌courses.‌ ‌Coimbatore Institute of Technology has been ranked 102 in NIRF Engineering Ranking 2021. Furthermore, it is‌ ‌accredited‌ with an ‌'A'‌ grade ‌by‌ ‌the‌ ‌NAAC.‌ ‌",
+  "contact": "+91-44- 27417000, +91-44-27417777",
+  "images": "/img/cit.de952825.jpeg",
+  "placement": "100%",
+  "rank": 10000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.cit.edu.in/"
+},{
+  "_id": {
+    "$oid": "63865e59cfb0b8829d9c8322"
+  },
+  "name": "Thiagarajar College",
+  "location": "Madurai",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil",
+    "Aeronautical"
+  ],
+  "naacAccrediation": "A++",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Thiagarajar College founded on 7th July 1949, was formally inaugurated on 12th October 1949 by His Excellency, the King of Bhavnagar, the then Governor of the Madras State. In the inaugural function, the founder, Karumuttu Thiagarajan Chettiar, described this college as a “Small and Humble Endeavour in Education”. It is said that as the mathematical equation 7 x 7 = 49 will remain unchanged forever, the college will also remain immortal on the sands of eternity, as it was opened on 07.07.1949.",
+  "contact": "+91 452 2311875",
+  "images": "/img/thiagarajar.f4fd4c6e.jpg",
+  "placement": "100%",
+  "rank": 11000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.tce.edu/"
+},{
+  "_id": {
+    "$oid": "63865e70cfb0b8829d9c8324"
+  },
+  "name": "Sri Krishna College of Engineering and Technology",
+  "location": "Coimbatore",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil",
+    "Aeronautical"
+  ],
+  "naacAccrediation": "A++",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Sri Krishna College of Engineering and Technology is the most sought after Institution among the premier technical Institutions in South India. With a decade of establishment in 1998, the Institution has marched towards the pinnacle of glory through its remarkable achievements in the field of Engineering Education.It is an autonomous Institution, accredited by NBA and has been offered ‘A’ Grade (3.42 out of 4 scale) by NAAC for its academic excellence. It offers 8 UG programmes, 9 PG programmes, 1 integrated programme and 7 research programs. The Institution offers an exciting academic environment with well qualified 354 dedicated faculty members to inspire and nurture the student fraternity. With industry drafted Choice Based Credit System (CBCS) curriculum and syllabi, the Institution takes every effort to bring its students to the forefront of the society as skillful and responsible engineers",
+  "contact": "0422-2678001",
+  "images": "/img/krishna.5559f5dc.jpeg",
+  "placement": "100%",
+  "rank": 12000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.skcet.ac.in/"
+},{
+  "_id": {
+    "$oid": "63865e80cfb0b8829d9c8326"
+  },
+  "name": "Kumaraguru College of Technology",
+  "location": "Coimbatore",
+  "coursesAvailable": [
+    "CSE",
+    "ECE",
+    "EEE",
+    "IT",
+    "Civil",
+    "Aeronautical"
+  ],
+  "naacAccrediation": "A++",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 0,
+  "description": "Kumaraguru College of Technology (KCT), Coimbatore is a private Engineering College started in 1984 under the auspices of Ramanandha Adigalar Foundation, a charitable educational trust of Sakthi Group. Situated in a sprawling 156-acre campus in the IT corridor of Coimbatore, KCT is an autonomous institution affiliated to the Anna University, Chennai and approved by All India Council for Technical Education (AICTE). KCT was granted Five Year Accreditation status in its first cycle of accreditation. Later, in the second cycle, with a CGPA of 3.21 on 4.0 scale, A Grade was awarded which was valid till 02 December 2021. In July 2022, following the NAAC Peer Team visit for third cycle of accreditation, KCT has been awarded A++ Grade, the highest grade awarded to institutions by NAAC with KCT securing a CGPA of 3.62 on a 4 – point scale. And all the eligible UG programs have also been accredited by National Board of Accreditation (NBA).The able guidance and patronage of Arutselvar Dr. N.Mahalingam, Founder, Sakthi Group along with the efficient administration of Dr.B.K.Krishnaraj Vanavarayar, Chairman, the resourcefulness of Sri. M.Balasubramaniam, Correspondent and the foresightedness of Sri. Shankar Vanavarayar, Joint Correspondent have equipped the college with excellent facilities such as spacious classrooms, seminar halls, well-equipped laboratories, excellent sporting amenities, dedicated high-speed internet connectivity (broadband) and well-qualified faculty.",
+  "contact": "0422-2661100",
+  "images": "/img/kumaraguru.e169cb1d.jpeg",
+  "placement": "100%",
+  "rank": 8000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669750182133"
+    }
+  },
+  "__v": 0,
+  "link": "https://www.kct.ac.in/"
+}]
