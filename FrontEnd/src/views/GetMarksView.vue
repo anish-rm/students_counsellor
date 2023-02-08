@@ -1,5 +1,6 @@
 <template>
     <div>
+    <NavBar></NavBar>
     <section class="p-5" id="learn">
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -7,7 +8,7 @@
                     <img src="@/assets/form.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md p-5">
-                    <form>
+            <form v-on:submit.prevent="onSubmit">
             <div class="mb-3">
                 <label for="first-name" class="col-form-label">Enter Name</label>
                 <input type="text" name="" id="first-name" class="form-control">
@@ -43,12 +44,16 @@
         </div>
     </section>
     <FAQ></FAQ>
+    <Footer></Footer>
+
     </div>
 </template>
 
 <script>
     // import Form from '@/components/form.vue'
     import FAQ from '@/components/FAQ.vue'
+    import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
 
     export default{
         data(){
@@ -58,7 +63,9 @@
         },
         components:{
             // Form,
-            FAQ
+            FAQ,
+            NavBar,
+        Footer
         },
         methods:{
             gotoResult(){

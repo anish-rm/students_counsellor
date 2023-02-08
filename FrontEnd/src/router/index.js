@@ -5,6 +5,12 @@ import AboutView from '../views/AboutView.vue'
 import GetMarksView from '../views/GetMarksView.vue'
 import ResultView from '../views/ResultView.vue'
 import ContactView from '../views/ContactView.vue'
+import SignUpView from '../views/SignUpView.vue'
+import LoginView from '../views/LoginView.vue'
+import CreateCollegeView from '../views/CreateCollege.vue'
+
+import store from "../store/index";
+
 
 
 
@@ -12,6 +18,16 @@ import ContactView from '../views/ContactView.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/signup',
+    name: 'signup',
+    component: SignUpView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
+  },
   {
     path: '/',
     name: 'home',
@@ -36,6 +52,18 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: "/addCollege",
+    component: CreateCollegeView,
+    beforeEnter(to, from, next) {
+      console.log(localStorage.getItem("userId"))
+      if (localStorage.getItem("userRole") == 'admin') {
+        next();
+      } else {
+        next("/");
+      }
+    }
   }
 ]
 

@@ -5,8 +5,9 @@
       <router-link to="/about">About</router-link>
     </nav> 
      <router-view/>  -->
-     <NavBar></NavBar>
-     <Footer></Footer>
+     <!-- <NavBar></NavBar>
+     <Footer></Footer> -->
+     <router-view/>
 
   </div>
 </template>
@@ -19,7 +20,15 @@
       components : {
         NavBar,
         Footer
-      }
+      },
+      created() {
+      // console.log("path in app", this.$store.path);
+      // this.$cookies.set("keyName", "hello");
+      // const nn = this.$cookies.get("jwt");
+      console.log(this.$cookies.keys());
+      this.$store.dispatch("AutoLogin", this.$store.path);
+      this.$store.path = null;
+    }
     }
 
 </script>

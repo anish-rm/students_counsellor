@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form class="myform">
+        Name : <input type="text" name="name" id="name"> <br>
+        Location : <input type="text" name="location" id="location"> <br>
+        NAAC Accrediation : <input type="text" name="naacAccrediation" id="naac"> <br>
+        Contact: <input type="text" name="contact" id="contact"> <br>
+        <input type="file" accept='image/*' name="photo" id="photo" style="display: none;"> <br>
+        <label for="photo">Chose photo</label>
+        <input type="submit" value="submit">
+    </form>
+    <h1>hello</h1>
+</body>
+
+<script>
+    const myform = document.querySelector('.myform');
+    if(myform) {
+        myform.addEventListener('submit',async e=>{
+            e.preventDefault();
+            const form = new FormData();
+            form.append('name', document.getElementById('name').value);
+            form.append('location', document.getElementById('location').value);
+            form.append('naacAccrediation', document.getElementById('naac').value);
+            form.append('contact', document.getElementById('contact').value);
+            form.append('photo', document.getElementById('photo').files[0]);
+            console.log(form);
+            const name = document.getElementById('name').value;
+            const data = {name};
+            try {
+                const url = 'http://localhost:7000/api/v1/colleges/'
+                const res = await axios({
+                    method: 'POST',
+                    url,
+                    data : form
+                });
+                if(res.data.status === 'success') {
+                    console.log("success");
+                }
+            } catch (err) {
+                console.log('error', err);
+            }
+        })
+    }
+</script>
+
+
+</html>
