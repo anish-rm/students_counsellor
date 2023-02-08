@@ -11,13 +11,11 @@ const app = express();
 const cors = require('cors')
 
 // SERVING STATIC FILES-------------------------------------
+app.use(express.static(`${__dirname}/public`));
 
 // 1.Middlewares -------------------------------------
-app.use(express.json({ limit: '10kb' }));
-// it is necessary because if we send data from we can acccess by only through this middleware
-// it parse data coming from url encoded
-// now we can data using req.body
-app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+app.use(express.json());
+app.use(express.urlencoded({extended: false}))
 
 app.use(morgan('dev'));
 app.use(cors());

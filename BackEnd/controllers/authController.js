@@ -39,6 +39,7 @@ exports.signUp = async (req, res, next) => {
           });
         
     } catch (err){
+      console.log(err);
         res.status(400).json({
             status: 'error',
             message: err,
@@ -201,3 +202,16 @@ exports.updatePassword = async (req, res, next) => {
   }
   
 };
+
+exports.restrictTo =
+  (...roles) =>
+  (req, res, next) => {
+    // req.user we are assigned in protect middleware it will have detail of user logged in becoz we are running first protect middleware then only authorization middleware
+    if (!roles.includes(req.user.role)) {
+      return res.status(403).json({
+        status: 'error',
+        message: 'You do not have permission to perform this action',
+      });
+    }
+    next();
+  };
