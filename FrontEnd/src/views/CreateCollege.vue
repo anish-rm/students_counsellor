@@ -115,7 +115,7 @@ export default{
         };
     console.log(config);
       try {
-                const url = 'http://localhost:7000/api/v1/colleges/'
+                const url = `${this.$store.state.origin}api/v1/colleges/`
                 const res = await axios({
                     method: 'POST',
                     url,

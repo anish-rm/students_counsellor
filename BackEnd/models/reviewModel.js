@@ -92,7 +92,7 @@ reviewSchema.pre(/^findOneAnd/, async function (next) {
 reviewSchema.post(/^findOneAnd/, function () {
     console.log("iam here");
 
-  this.r.constructor.calcAverageRatings(this.r.college); 
+    this.r.constructor.calcAverageRatings(this.r.college); 
 });
 
 const Review = mongoose.model('Review', reviewSchema);

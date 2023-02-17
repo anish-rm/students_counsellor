@@ -28,7 +28,6 @@ export default new Vuex.Store({
   },
   mutations: {
     authUser(state, userData) {
-      console.log(userData);
       state.idToken = userData.token;
       state.userId = userData.userId;
       state.userName = userData.userName;
@@ -45,7 +44,7 @@ export default new Vuex.Store({
     signup({ commit }, authData) {
       axios
         .post(
-          "http://localhost:7000/api/v1/users/signup",
+            `${this.state.origin}api/v1/users/signup`,
           {
             name: authData.name,
             email: authData.email,
@@ -55,7 +54,6 @@ export default new Vuex.Store({
           }
         )
         .then(res => {
-          console.log(res);
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("userId", res.data.data.newUser._id);
           localStorage.setItem("userName", res.data.data.newUser.name);
@@ -72,14 +70,13 @@ export default new Vuex.Store({
     },
     login({ commit }, authData) {
       return axios
-        .post("http://localhost:7000/api/v1/users/login", {
+        .post(`${this.state.origin}api/v1/users/login`, {
           email: authData.email,
           password: authData.password
           // returnSecureToken: true
         })
         .then(res => {
           // console.log(res.data.data.user);
-          console.log(res);
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("userId", res.data.data.user._id);
           localStorage.setItem("userName", res.data.data.user.name);
@@ -101,6 +98,7 @@ export default new Vuex.Store({
       localStorage.removeItem("token");
       localStorage.removeItem("userId");
       localStorage.removeItem("userName");
+      localStorage.removeItem("userRole");
       router.push("/");
     },
     AutoLogin({ commit }, path) {

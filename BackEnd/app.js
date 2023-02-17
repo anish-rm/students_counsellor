@@ -31,6 +31,7 @@ app.use((req, res, next) => {
 
 // manipulating req with our own middleware
 app.use((req, res, next) => {
+  console.log("😎😎😎",req.body);
   req.simple = req.body;
   next();
 });

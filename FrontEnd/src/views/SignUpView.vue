@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row align-items-center justify-content-between login">
                 <div class="col-md-6 mt-0 pt-0 mt-md-5 pt-md-5 pt-lg-5 mt-lg-5 pt-xl-0 mt-xl-0">
-                    <img src="@/assets/Time management orange.png" class="img-fluid w-100" alt="">
+                    <img src="@/assets/signscb1.jpeg" class="img-fluid w-100" alt="">
                 </div>
                 <div class="col-md-6 mt-0 pt-0 mt-md-5 pt-md-5 pt-lg-5 mt-lg-5 pt-xl-0 mt-xl-0 p-lg-5 text-center">
                     <div class="p-3 pb-4">
-                        <h1 style="color:#653939; font-weight: 700; font-size: 40px;">Welcome</h1>
+                        <h1 style="font-weight: 700; font-size: 40px;">Welcome</h1>
                     </div>
                     <form  v-on:submit.prevent="onSubmit">
                         <div class="input-group mb-4" style="border:#653939; border-width:1px; border-style:solid; border-radius: 6px;">
@@ -27,20 +27,17 @@
                         </div>
                         <div class="input-group mb-3" style="border:#653939; border-width:1px; border-style:solid; border-radius: 6px;" >
                             <span class="input-group-text" id="basic-addon1" style="background-color: #FFFFFF;"><img src="@/assets/passwordicon.png" alt=""></span>
-                            <input :type="confirmpwdtype" class="form-control p-2 password" placeholder="Confirm Password" aria-label="password" aria-describedby="basic-addon1"  id="password" v-model="passwordConfirm" required>
+                            <input :type="confirmpwdtype" class="form-control p-2 password" placeholder="Confirm Password" aria-label="password" aria-describedby="basic-addon1"  id="confirmpassword" v-model="passwordConfirm" required>
                             <span class="input-group-text eyeslash" :class="{nodisplay: !confirmClose}" @click="confirmPasswordChange" id="basic-addon1" style="background-color: #FFFFFF;"><img src="@/assets/hide.png" alt=""></span>
                             <span class="input-group-text eyeopen" :class="{nodisplay: confirmClose}" id="basic-addon1" @click="confirmPasswordChange" style="background-color: #FFFFFF;"><img src="@/assets/view.png" alt=""></span>
                         </div>
-                        <div class="passwordError text-start" style="margin-top: -15px; color: red;display: none;">Password is incorrect</div>
-                        <div class="mb-2 text-end">
-                            <a href="#" class="forgot"><p>Forgot Password?</p></a>
-                        </div>
-                        <div class="d-grid gap-2 mb-5">
-                            <button class="btn" style="background: #ED7014; color:#FFFFFF;font-weight: 700;" type="submit" id="liveToastBtn">Sign In</button>
+                        
+                        <div class="d-grid gap-2 mb-2">
+                            <button class="btn btn-primary" style=" color:#FFFFFF;font-weight: 700;" type="submit" id="liveToastBtn">{{ btntxt }}</button>
                         </div>
                     </form>
-                    <div style="color: #654e4e;font-weight: 700;font-size: 18px;">
-                        <h5>Already have an account ? <span style="text-decoration: underline; font-size: 25px; font-weight: 600;"> <router-link to="/login" class="nav-link">Login</router-link> </span> </h5>
+                    <div style="font-weight: 700;font-size: 18px;">
+                        <h5 class="lead">Already have an account ? <span style="text-decoration: underline; font-size: 25px; font-weight: 600;"> <router-link to="/login" class="nav-link">Login</router-link> </span> </h5>
                     </div>
                 </div>
             </div>
@@ -62,7 +59,8 @@ export default{
                 confirmClose: true,
                 passwordConfirm: null,
                 pwdtype: "password",
-                confirmpwdtype: "password"
+                confirmpwdtype: "password",
+                btntxt: "Sign Up"
             }
         },
         methods :{
@@ -91,7 +89,11 @@ export default{
                 password: this.password,
                 passwordConfirm: this.passwordConfirm
             };
-            this.$store.dispatch("signup", formData);
+            this.btntxt = "Signing Up..."
+            this.$store.dispatch("signup", formData).then(() => {
+                    this.btntext = "Sign Up"
+                })
+                .catch(err => console.log(err));
             }
         }
     }

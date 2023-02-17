@@ -6,6 +6,10 @@ const slugify = require('slugify');
 
 const College = require('../models/collegeModel');
 
+const ClosingRank = require('../models/closingRankModel');
+
+const Review = require('../models/reviewModel');
+
 
 const multerStorage = multer.memoryStorage();
 
@@ -91,7 +95,7 @@ exports.getAllColleges = async (req, res) => {
 
 exports.createCollege = async (req, res) => {
   try {
-    // if it was rejected it will go to catch block
+    
     console.log("😎😎😎😎",req.body);
     if (req.file) req.body.image = req.file.filename;
     const coursesAvailable = req.body.coursesAvailable.split(",");
@@ -115,6 +119,8 @@ exports.createCollege = async (req, res) => {
 
 exports.deleteCollege = async (req, res) => {
   try {
+    await ClosingRank.deleteMany( { college: req.params.id });
+    await Review.deleteMany( { college: req.params.id });
     await College.findByIdAndDelete(req.params.id);
     res.status(200).json({
       status: 'success',
@@ -162,6 +168,7 @@ exports.getCollegeRanks = async (req, res) => {
 
 exports.updateCollege = async (req, res) => {
   try{
+    console.log(req.body);
     if (req.file) req.body.image = req.file.filename;
     const college = await College.findByIdAndUpdate(req.params.id,req.body, {
       new: true, //it will return a updated document otherwise it will send aa old document

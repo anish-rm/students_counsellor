@@ -4,11 +4,11 @@
             <div class="alert mt-3" :class="{'nodisplay' : !alert, 'alert--error': !alertType ,'alert--success': alertType  }" style="font-size: 20px;"> <p>{{ alertmsg }}</p> </div>
             <div class="row align-items-center justify-content-between login">
                 <div class="col-md-6 mt-0 pt-0 mt-md-5 pt-md-5 pt-lg-5 mt-lg-5 pt-xl-0 mt-xl-0">
-                    <img src="@/assets/Time management orange.png" class="img-fluid w-100" alt="">
+                    <img src="@/assets/loginscb1.jpeg" class="img-fluid w-100" alt="">
                 </div>
                 <div class="col-md-6 mt-0 pt-0 mt-md-5 pt-md-5 pt-lg-5 mt-lg-5 pt-xl-0 mt-xl-0 p-lg-5 text-center">
                     <div class="p-3 pb-4">
-                        <h1 style="color:#653939; font-weight: 700; font-size: 40px;">Sign In!</h1>
+                        <h1 style=" font-weight: 700; font-size: 40px;">Sign In!</h1>
                     </div>
                     <form  v-on:submit.prevent="onSubmit">
                         <div class="input-group mb-4" style="border:#653939; border-width:1px; border-style:solid; border-radius: 6px;">
@@ -26,12 +26,12 @@
                         <!-- <div class="mb-2 text-end">
                             <a href="#" class="forgot"><p>Forgot Password?</p></a>
                         </div> -->
-                        <div class="d-grid gap-2 mb-5">
-                            <button class="btn" style="background: #ED7014; color:#FFFFFF;font-weight: 700;" type="submit" id="liveToastBtn">Sign In</button>
+                        <div class="d-grid gap-2 mb-2">
+                            <button class="btn btn-primary" style=" color:#FFFFFF;font-weight: 700;" type="submit" id="liveToastBtn">{{ btntext }}</button>
                         </div>
                     </form>
-                    <div style="color: #654e4e;font-weight: 700;font-size: 18px;">
-                        <h5>Don't have an account ? <span style="text-decoration: underline; font-size: 25px; font-weight: 600;"> <router-link to="/signup" class="nav-link">SignUp</router-link> </span> </h5>
+                    <div style="font-weight: 700;font-size: 18px;">
+                        <h5 class="lead">Don't have an account ? <span style="text-decoration: underline; font-size: 25px; font-weight: 600;"> <router-link to="/signup" class="nav-link">SignUp</router-link> </span> </h5>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,8 @@ export default{
                 alert:false,
                 alertstyle: "d-none",
                 alertmsg:"",
-                alertType: false
+                alertType: false,
+                btntext: "Sign In"
             }
         },
         methods :{
@@ -71,11 +72,13 @@ export default{
                     email: this.email,
                     password: this.password
                 };
+                this.btntext = "Signing In..."
                 this.$store.dispatch("login", {
                     email: formData.email,
                     password: formData.password
                 }).then(() => {
                     this.alert = true;
+                    this.btntext = "Sign In"
                     if(this.$store.state.error){
                         this.alertmsg = this.$store.state.error
                         window.setTimeout(() => {
@@ -95,7 +98,7 @@ export default{
 
 </script>
 
-<style>
+<style scoped>
     .nodisplay{
         display: none;
     }
@@ -103,7 +106,6 @@ export default{
         position: fixed;
         top: 0;
         left: 50%;
-        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 9999;
         color: #fff;
@@ -113,7 +115,6 @@ export default{
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         padding: 1.6rem 5rem;
-        -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
         box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
         }
         .alert--success {

@@ -3,7 +3,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src ="https://scbapi.anish-rm.repl.co/img/tour-1-3.jpg" class="d-block w-100" alt="..." style="height:680px">
+      <img src ="@/assets/image1.jpg" class="d-block w-100" alt="..." style="height:680px">
     </div>
     <div class="carousel-item">
       <img src="@/assets/image2.jpg" class="d-block w-100" alt="..." style="height:680px">

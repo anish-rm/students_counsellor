@@ -15,14 +15,18 @@
                     <li class="nav-item">
                         <router-link to="/getmarks" class="nav-link">Predict College</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link to="/allColleges" class="nav-link">All Colleges</router-link>
+                    </li>
                     <li class="nav-item" v-if = "!admin">
                         <router-link to="/about" class="nav-link">About</router-link>
                     </li>
-                    <li class="nav-item" v-if = "!admin">
-                        <router-link to="/contact" class="nav-link">Contact</router-link>
-                    </li>
+                    
                     <li class="nav-item" v-if = "admin">
                         <router-link to="/addCollege" class="nav-link">Add College</router-link>
+                    </li>
+                    <li class="nav-item" v-if = "admin">
+                        <router-link to="/addRank" class="nav-link">Add Rank</router-link>
                     </li>
                     <li class="nav-item" v-if="!auth">
                         <router-link to="/signup" class="nav-link">Login/SignUp</router-link>

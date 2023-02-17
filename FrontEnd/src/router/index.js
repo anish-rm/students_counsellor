@@ -8,6 +8,8 @@ import ContactView from '../views/ContactView.vue'
 import SignUpView from '../views/SignUpView.vue'
 import LoginView from '../views/LoginView.vue'
 import CreateCollegeView from '../views/CreateCollege.vue'
+import AddRankView from '../views/AddRankView.vue'
+import AllCollegeView from '../views/AllCollegesView.vue'
 
 import store from "../store/index";
 
@@ -44,7 +46,7 @@ const routes = [
     component: GetMarksView
   },
   {
-    path: '/result/:rank',
+    path: '/result/:category/:rank',
     name: 'result',
     component: ResultView
   },
@@ -54,8 +56,25 @@ const routes = [
     component: ContactView
   },
   {
+    path: '/allColleges',
+    name: 'contact',
+    component: AllCollegeView
+  },
+  {
     path: "/addCollege",
     component: CreateCollegeView,
+    beforeEnter(to, from, next) {
+      console.log(localStorage.getItem("userId"))
+      if (localStorage.getItem("userRole") == 'admin') {
+        next();
+      } else {
+        next("/");
+      }
+    }
+  },
+  {
+    path: "/addRank",
+    component: AddRankView,
     beforeEnter(to, from, next) {
       console.log(localStorage.getItem("userId"))
       if (localStorage.getItem("userRole") == 'admin') {
